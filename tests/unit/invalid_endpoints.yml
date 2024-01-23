@@ -1,0 +1,7 @@
+- name: Valid Endpoint
+  url: https://example.com
+  method: GET
+
+- name: "Another Endpoint
+  url: "https://example.org
+  # Missing closing quote above
