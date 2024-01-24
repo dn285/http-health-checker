@@ -23,7 +23,7 @@ Program that checks the health of a set of HTTP endpoints by monitoring their re
         .\venv\Scripts\activate
         ```
 
-    - MacOS/Linus:
+    - MacOS/Linux:
         ```bash
         python3 -m venv venv
         source venv/bin/activate
