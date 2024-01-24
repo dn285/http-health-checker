@@ -1,6 +1,6 @@
 # http-health-checker
 
-Program that checks the health of a set of HTTP endpoints. 
+Program that checks the health of a set of HTTP endpoints by monitoring their response status and response time at regular intervals.
 
 ## Prerequisites
 
