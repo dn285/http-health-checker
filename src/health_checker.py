@@ -1,3 +1,4 @@
+import argparse
 import requests
 import yaml
 import time
@@ -32,7 +33,17 @@ def check_health(endpoint):
         return False
 
 def main():
-    endpoints = load_endpoints('endpoints.yml')
+    parser = argparse.ArgumentParser(description="Health checker for HTTP endpoints.")
+    parser.add_argument(
+        'yaml_file', 
+        type=str, 
+        help="Path to the YAML file containing the endpoints.",
+        default='endpoints.yml',
+        nargs='?'
+    )
+    args = parser.parse_args()
+
+    endpoints = load_endpoints(args.yaml_file)
     health_stats = {}
 
     try:
