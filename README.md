@@ -41,9 +41,9 @@ Run the application with the following command:
 ```bash
 python src/health_checker.py [path_to_yaml_file]
 ```
-- `path_to_yaml_file` is the path to the YAML file containing the endpoints. If not specified, the application will use the default file `endpoints.yml` found in `src`, which contains a sample YAML.
+- `path_to_yaml_file` is the path to the YAML file containing the endpoints. If not specified, the application will use the default file `src/endpoints.yml`, which contains a sample YAML.
 
-Alternatively, the user may replace the contents of `endpoints.yml` with the desired YAML.
+Alternatively, the user may replace the contents of `src/endpoints.yml` with the desired YAML.
 
 ## Testing
 

@@ -38,7 +38,7 @@ def main():
         'yaml_file', 
         type=str, 
         help="Path to the YAML file containing the endpoints.",
-        default='endpoints.yml',
+        default='src/endpoints.yml',
         nargs='?'
     )
     args = parser.parse_args()
