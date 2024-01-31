@@ -48,7 +48,8 @@ def main():
 
     try:
         while True:
-            print(f"Checking health... {datetime.now()}")
+            start_time = datetime.now()
+            print(f"Checking health... {start_time}")
             for endpoint in endpoints:
                 domain = endpoint['url'].split('/')[2]
                 health_stats.setdefault(domain, {'up': 0, 'total': 0})
@@ -62,7 +63,10 @@ def main():
                 #print(f"Debug: {domain} {stats['up']} {stats['total']}")
                 print(f"{domain} has {availability:.0f}% availability percentage")
             
-            time.sleep(15)
+            end_time = datetime.now()
+            processing_time = end_time - start_time
+            time.sleep((15-processing_time))
+            
     
     except KeyboardInterrupt:
         print("Program interrupted by user")
